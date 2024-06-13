@@ -114,4 +114,4 @@ def main(page: ft.Page):
                    ft.Container(padding=5)], expand=True)
     )
 
-ft.app(target=main)
+ft.app(main)
