@@ -1,18 +1,11 @@
 import flet as ft
-import webbrowser
+
+
 
 def main(page: ft.Page):
-    
-    def botao(e):
-        page.add(ft.Text("olá"))
-        page.update()
-        
-    
-    button = ft.TextButton("link", on_click=botao)
-    
-    
-    
-    page.add(button)
-    
-
+    page.title="meu app flet"
+    def link(e):
+        page.launch_url("https://www.youtube.com/")
+    botao = ft.TextButton("link", on_click=link)
+    page.add(ft.Text("Meu aplicativo"), botao)
 ft.app(main)
